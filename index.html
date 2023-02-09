@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js" defer type="module"> </script>
     <link rel="stylesheet" href="./app.css">
-    
+
     <title>Document</title>
 </head>
-<body>
-   <nav>
-    <div class="logo">
-        <h2>Movie Book</h2>
 
-    </div>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Movie Book</h2>
+
+        </div>
 
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Know More</a></li>
         </ul>
- 
-   </nav>
+
+    </nav>
     <main>
+        <div>
+            <a class="movie- link" href="/moviename">
+                <div class="movie" data- d="moviename">
+                    <div class="movie-img-wrapper">
+                    </div>
+                    <h4>$moviename</h4>
+                </div>
+            </a>
+        </div>
 
     </main>
     <div id="booker">
         <h3 class="v-none">Seat Selector</h3>
-        <div id="booker-grid-holder"></div>
+        <div id="booker-grid-holder">
+            <div class="booking-grid"></div>
+            <div class="booking-grid"></div>
+        </div>
         <button id="book-ticket-btn" class="v-none">Book my seats</button>
     </div>
+
+    <div id="confirm-purchase" class="v-none">
+        <h3>Confirm your booking for seat numbers:</h3>
+        <form id="customer-detail-form">
+            <input type="email" required>
+            <input type="tel" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="success" class="v-none">
+        <h3>Booking details</h3>
+        <p>Seat Numbers: </p>
+        <p>Email: </p>
+        <p>Phone Number: </p>
+    </div>
 </body>
+
 </html>

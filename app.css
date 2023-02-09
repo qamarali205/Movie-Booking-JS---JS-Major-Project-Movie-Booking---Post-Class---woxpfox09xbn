@@ -29,7 +29,20 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+/* navbar end */
 
+
+
+#booker-grid-holder {
+    display: flex;
+    justify-content: space-between;
+  }
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
 
 .d-none{
     display: none;
@@ -37,4 +50,11 @@ nav a:hover{
 .v-none{
     visibility: hidden;
 }
-
+.selected-seat {
+    border: 4px outset rgb(0, 0, 0);
+  }
+  
+  .unavailable-seat {
+    background-color: gray;
+    pointer-events: none;
+  }
