@@ -87,12 +87,12 @@ nav a:hover{
 #success{
     text-align: center;
 }
-/* .d-none{
+.d-none{
     display: none;
 }
 .v-none{
     visibility: hidden;
-} */
+}
 .selected-seat {
     border: 4px outset rgb(0, 0, 0);
   }
