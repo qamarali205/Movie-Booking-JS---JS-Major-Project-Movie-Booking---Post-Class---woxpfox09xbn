@@ -1,24 +1,7 @@
 import {fetchMovieAvailability,fetchMovieList} from "./api.js"
 
 
-fetch(fetchMovieAvailability, fetchMovieList)
-  .then(response => response.json())
-  .then(data => {
-    // remove the loader
-    const loader = document.querySelector('#loader');
-    loader.parentNode.removeChild(loader);
-    
-    // display the data in the movie-holder div
-    const movieHolder = document.querySelector('#movie-holder');
-    data.forEach(movie => {
-      const movieDiv = document.createElement('div');
-      movieDiv.innerHTML = `<h2>${movie.name}</h2><img src="${movie.imgUrl}" alt="${movie.name}" />`;
-      movieHolder.appendChild(movieDiv);
-    });
-  })
-  .catch(error => {
-    console.error(error);
-  });
+
 
 
 const movieLinks = document.querySelectorAll('.movie-link');
