@@ -7,84 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js" defer type="module"> </script>
     <link rel="stylesheet" href="./app.css">
-
-    <title>Document</title>
+    <title>MovieShow Booking App</title>
 </head>
-
+ 
 <body>
     <nav>
         <div class="logo">
-            <h2>Movie Book</h2>
-
+            <h3>BookMyShow</h3>
         </div>
-
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Know More</a></li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Know More</a>
+            </li>
         </ul>
-
     </nav>
-    <main>
-        <div id="loader">Loading...</div>
-        <div id="movie-holder">
-           
-        </div>
 
+    <main>
+        <div id="loader">Loading..</div>
+       
     </main>
-    <div id="booker" class="v-none">
-        <h3>Seat Selector</h3>
+    <div id="booker">
+        <h3 class="v-none">Seat Selector</h3>
         <div id="booker-grid-holder">
-            <div class="booking-grid">
-                <div id="booking-grid-1">1</div>
-                <div id="booking-grid-2">2</div>
-                <div id="booking-grid-3">3</div>
-                <div id="booking-grid-4" class="red">4</div>
-                <div id="booking-grid-5">5</div>
-                <div id="booking-grid-6">6</div>
-                <div id="booking-grid-7">7</div>
-                <div id="booking-grid-8">8</div>
-                <div id="booking-grid-9">9</div>
-                <div id="booking-grid-10">10</div>
-                <div id="booking-grid-11">11</div>
-                <div id="booking-grid-12">12</div>
-              </div>
-              <div class="booking-grid">
-                <div id="booking-grid-13">13</div>
-                <div id="booking-grid-14">14</div>
-                <div id="booking-grid-15">15</div>
-                <div id="booking-grid-16">16</div>
-                <div id="booking-grid-17">17</div>
-                <div id="booking-grid-18">18</div>
-                <div id="booking-grid-19">19</div>
-                <div id="booking-grid-20">20</div>
-                <div id="booking-grid-21">21</div>
-                <div id="booking-grid-22">22</div>
-                <div id="booking-grid-23">23</div>
-                <div id="booking-grid-24">24</div>
-              </div>
         </div>
         <button id="book-ticket-btn" class="v-none">Book my seats</button>
-    </div>
-
-    <div id="confirm-purchase" class="v-none">
-        <h3>Confirm your booking for seat numbers:</h3>
-        <form id="customer-detail-form">
-           <div>
-            Email<input type="email" required>
-           </div> 
-           <div>
-            Phone No<input type="tel" required>
-           </div>
-            <button type="submit">Purchase</button>
-        </form>
-    </div>
-
-    <div id="success" class="v-none">
-        <h3>Booking details</h3>
-        <p>Seat Numbers: </p>
-        <p>Email: </p>
-        <p>Phone Number: </p>
     </div>
 </body>
 
